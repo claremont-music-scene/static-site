@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<!--
+	Verti by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    {% include '_sections/head.njk' %}
+
+</head>
+<body class="is-preload right-sidebar">
+<div id="page-wrapper">
+
+    {% include 'header.njk' %}
+
+
+    <!-- Main -->
+    <div id="main-wrapper">
+        <div class="container">
+            <div class="row gtr-200">
+                <div class="col-8 col-12-medium">
+                    <div id="content">
+
+                        <!-- Content -->
+                        <article>
+
+                            <h2>{{ title }}</h2>
+
+                            {{content | safe}}
+                        </article>
+
+                    </div>
+                </div>
+                <div class="col-4 col-12-medium">
+                    <div id="sidebar">
+
+                        <!-- Sidebar -->
+                        <section>
+                            <h3>Subheading</h3>
+                            <p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
+                                Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
+                                Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
+                                consequat etiam.</p>
+                            <footer>
+                                <a href="#" class="button icon solid fa-info-circle">Find out more</a>
+                            </footer>
+                        </section>
+
+                        <section>
+                            <h3>Subheading</h3>
+                            <ul class="style2">
+                                <li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+                                <li><a href="#">Ornare in hendrerit in lectus</a></li>
+                                <li><a href="#">Semper mod quis eget mi dolore</a></li>
+                                <li><a href="#">Quam turpis feugiat sit dolor</a></li>
+                                <li><a href="#">Amet ornare in hendrerit in lectus</a></li>
+                                <li><a href="#">Semper mod quisturpis nisi</a></li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   {% include '_sections/footer.njk' %}
+
+</div>
+
+<!-- Scripts -->
+
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.dropotron.min.js"></script>
+<script src="../../assets/js/browser.min.js"></script>
+<script src="../../assets/js/breakpoints.min.js"></script>
+<script src="../../assets/js/util.js"></script>
+<script src="../../assets/js/main.js"></script>
+
+</body>
+</html>

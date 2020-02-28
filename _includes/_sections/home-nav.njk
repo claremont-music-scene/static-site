@@ -1,0 +1,32 @@
+<!-- Nav -->
+<nav id="home-nav">
+    <ul>
+
+        <li {% if section=='events' %}class="current" {% endif %}>
+            <a href="{{ '/events' | url }}">Events</a>
+            <ul>
+                {%- for event_page in collections.events -%}
+                <li {% if page.url== event_page.url %}class="current" {% endif %}>
+                    <a href="{{ event_page.url }}">{{ event_page.data.title }}</a>
+                </li>
+                {%- endfor -%}
+            </ul>
+        </li>
+
+        <li {% if section=='community' %}class="current" {% endif %}>
+            <a href="{{ '/community' | url }}">Community</a>
+            <ul>
+                {%- for community_page in collections.community -%}
+                <li {% if page.url== community_page.url %}class="current" {% endif %}>
+                    <a href="{{ community_page.url }}">{{ community_page.data.title }}</a>
+                </li>
+                {%- endfor -%}
+            </ul>
+        </li>
+
+         <li {% if section=='about' %}class="current" {% endif %}>
+            <a href="{{ '/about' | url }}">About</a>
+         </li>
+
+    </ul>
+</nav>
