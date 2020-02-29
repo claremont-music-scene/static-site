@@ -1622,10 +1622,13 @@ ul.menu li:first-child {
 
 #home-nav {
   font-size: 0.9em;
+  width: 100%;
 }
 #home-nav ul {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  justify-content: space-between;
 }
 #home-nav ul li {
   float: left;
@@ -1879,7 +1882,7 @@ button.icon:before,
   }
 
   /* Nav */
-  #nav {
+  #nav, #home-nav {
     display: none;
   }
 

@@ -788,10 +788,13 @@
 	#home-nav {
 
 		font-size: 0.9em;
+		width: 100%;
 
 		ul {
 			list-style: none;
 			padding-left: 0;
+			display: flex;
+			justify-content: space-between;
 
 			li {
 				float: left;
@@ -1097,7 +1100,7 @@
 
 		/* Nav */
 
-			#nav {
+			#nav, #home-nav {
 				display: none;
 			}
 
