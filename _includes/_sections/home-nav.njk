@@ -13,6 +13,10 @@
             </ul>
         </li>
 
+        <li {% if section == 'news' %}class="current" {% endif %}>
+            <a href="{{ '/news' | url }}">News</a>
+        </li>
+
         <li {% if section=='community' %}class="current" {% endif %}>
             <a href="{{ '/community' | url }}">Community</a>
             <ul>

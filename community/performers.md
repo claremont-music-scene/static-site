@@ -1,6 +1,6 @@
 ---
 layout: _base/right-sidebar.njk
-title: Performers, Bands and Artists
+title: Performers
 section: community
 tags: community
 ---
