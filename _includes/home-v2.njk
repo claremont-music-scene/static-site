@@ -39,57 +39,12 @@
     <div id="features-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-4 col-12-medium">
-
-                    <!-- Box -->
-                    <section class="box feature"> <!-- 373x295 -->
-                        <a href="#" class="image featured">
-                            <img src="https://api.rethumb.com/v1/width/373/height/295/https://claremont-musak-scene.s3-us-west-1.amazonaws.com/site-media/barbershop-quartet-july-fourth.jpg" alt=""/>
-                        </a>
-                        <div class="inner">
-                            <header>
-                                <h2>A Community Music Platform</h2>
-                            </header>
-                            <p>We're a non-profit organization dedicated to providing a place for performers and patrons of local music to collectively elevate
-                            our experience.</p>
-                        </div>
-                    </section>
-
-                </div>
-                <div class="col-4 col-12-medium">
-
-                    <!-- Box -->
-                    <section class="box feature">
-                        <a href="#" class="image featured"><img src="https://api.rethumb.com/v1/width/373/height/295https://claremont-musak-scene.s3-us-west-1.amazonaws.com/site-media/80s-night-mnl.jpg" alt=""/></a>
-                        <div class="inner">
-                            <header>
-                                <h2>Events and Experiences</h2>
-                            </header>
-                            <p>Check out our <a href="{{ '/events/calendar' | url }}">events calendar</a> to find out what's happening in the area. </p>
-
-                            <p>Our guides for ongoing events like open mics and music series performances will keep you informed.</p>
-                        </div>
-                    </section>
-
-                </div>
-                <div class="col-4 col-12-medium">
-
-                    <!-- Box -->
-                    <section class="box feature">
-                        <a href="#" class="image featured"><img src="https://api.rethumb.com/v1/width/373/height/295/https://claremont-musak-scene.s3-us-west-1.amazonaws.com/site-media/folk-jammers-irish.jpg" alt=""/></a>
-                        <div class="inner">
-                            <header>
-                                <h2>Network</h2>
-                            </header>
-                            <p>Resources for finding classes, tutors, lessons.
-
-                            Networking opportunties.
-
-                            Find or host your own events.</p>
-                        </div>
-                    </section>
-
-                </div>
+                {%  import '_macros/box.njk' as box %}
+                {%- for hpbox in collections.homepage_box -%}
+                    <div class="col-4 col-12-medium">
+                        {{ box.make_box(hpbox) }}
+                    </div>
+                {%- endfor -%}
             </div>
         </div>
     </div>
