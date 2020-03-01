@@ -1,0 +1,32 @@
+{% extends '_base/right-sidebar.njk' %}
+
+{% block content %}
+{{ content | safe }}
+{% endblock %}
+
+{% block right_sidebar %}
+<div id="sidebar">
+
+    <!-- Sidebar -->
+    <section>
+        <h3>Event Planning</h3>
+        <p>Do you have an idea for an event or want to try something out?  Take advantage of our network to help with planning and promotion.</p>
+        <footer>
+            <a href="{{ '/events/planning/' | url }}" class="button icon solid fa-info-circle">Find out more</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Events Directory</h3>
+        <ul class="style2">
+            <li><a href="#">Meetup Group</a></li>
+            <li><a href="#">The Press Events Calendar</a></li>
+            <li><a href="#">Claremont Community School of Music</a></li>
+            <li><a href="#">Colleges Music Calendar</a></li>
+            <li><a href="#">Upcoming Music Events</a></li>
+            <li><a href="#">Summer Concert Series</a></li>
+        </ul>
+    </section>
+
+</div>
+{% endblock %}

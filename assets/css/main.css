@@ -98,7 +98,7 @@ body {
   background-position: top left, top left;
   background-repeat: repeat-x, repeat;
   background-size: 100% 30em, auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Arial";
   font-size: 13pt;
   color: #696969;
   font-weight: 300;
@@ -116,7 +116,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 }
 
 input, select, textarea {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Arial";
   font-size: 13pt;
   color: #696969;
   font-weight: 300;
@@ -1171,58 +1171,66 @@ footer {
 }
 
 /* Forms */
-form label {
+form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+form ul li {
+  padding: 0;
+}
+form ul li label {
   display: block;
   font-weight: 800;
   margin: 0 0 1em 0;
   font-size: 0.8em;
   color: #444;
 }
-form input[type=text],
-form input[type=email],
-form input[type=password],
-form select,
-form textarea {
+form ul li input[type=text],
+form ul li input[type=email],
+form ul li input[type=password],
+form ul li select,
+form ul li textarea {
   -webkit-appearance: none;
   display: block;
   width: 100%;
   border-radius: 8px;
   border: solid 1px #eee;
 }
-form input[type=text]:focus,
-form input[type=email]:focus,
-form input[type=password]:focus,
-form select:focus,
-form textarea:focus {
+form ul li input[type=text]:focus,
+form ul li input[type=email]:focus,
+form ul li input[type=password]:focus,
+form ul li select:focus,
+form ul li textarea:focus {
   border-color: #0090c5;
 }
-form input[type=text],
-form input[type=email],
-form input[type=password] {
+form ul li input[type=text],
+form ul li input[type=email],
+form ul li input[type=password] {
   line-height: 3em;
   padding: 0 1em;
 }
-form select {
+form ul li select {
   line-height: 3em;
   padding: 0 1em;
 }
-form textarea {
+form ul li textarea {
   min-height: 9em;
   padding: 1em;
 }
-form ::-webkit-input-placeholder {
+form ul li ::-webkit-input-placeholder {
   color: #555 !important;
 }
-form :-moz-placeholder {
+form ul li :-moz-placeholder {
   color: #555 !important;
 }
-form ::-moz-placeholder {
+form ul li ::-moz-placeholder {
   color: #555 !important;
 }
-form :-ms-input-placeholder {
+form ul li :-ms-input-placeholder {
   color: #555 !important;
 }
-form ::-moz-focus-inner {
+form ul li ::-moz-focus-inner {
   border: 0;
 }
 
@@ -1559,7 +1567,7 @@ ul.menu li:first-child {
   background: #00aeef;
   color: #fff;
   border-radius: 6px;
-  font-family: "Oleo Script", serif;
+  font-family: "Trend Sans One";
   font-weight: 400;
   padding: 0em 0.2em 0em 0.2em;
   font-size: 3.25em;

@@ -1,5 +1,5 @@
 ---
-layout: _base/right-sidebar.njk
+layout: events/index.njk
 section: events
 tags: landing
 title: Events
