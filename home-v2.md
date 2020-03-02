@@ -1,4 +1,4 @@
 ---
-layout: home-v2.njk
+layout: homepage.njk
 section: home
 ---
