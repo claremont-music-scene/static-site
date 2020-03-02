@@ -1,5 +1,8 @@
 ---
 layout: _base/right-sidebar.njk
+date: 2017-01-02
+tags: events
+title: Guide
 ---
 ## Special Events
 
