@@ -1,0 +1,11 @@
+{% extends '_base/right-sidebar.njk' %}
+
+{% block content %}
+    <ul>
+
+
+    {%- for openmic in collections.open_mic -%}
+        <li><a href="{{ openmic.url }}">{{ openmic.data.title }}</a></li>
+    {%- endfor -%}
+    </ul>
+{% endblock %}

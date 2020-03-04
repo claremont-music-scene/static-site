@@ -9,6 +9,6 @@ header: Local Music / Open Mics / Jam Sessions
 Use our [events guide](/events/guide/) to help connect you to the best opportunities for:
 
 * Local music performances
-* Open Mics in the area
+* [Open Mics](/events/open-mic/) in the area
 * Jam sessions, drum circles
 * Highlighting opportunities for people of all ages and experience levels.

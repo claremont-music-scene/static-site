@@ -1,0 +1,9 @@
+{% extends '_base/right-sidebar.njk' %}
+
+{% block content %}
+    <ul>
+    {%- for series in collections.music_series -%}
+        <li><a href="{{ series.url }}">{{ series.data.title }}</a></li>
+    {%- endfor -%}
+    </ul>
+{% endblock %}
