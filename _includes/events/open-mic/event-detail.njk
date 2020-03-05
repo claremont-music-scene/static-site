@@ -1,0 +1,9 @@
+{% extends '_base/right-sidebar.njk' %}
+
+{% block content %}
+    {% import '_macros/box.njk' as boxmaker %}
+    {{ boxmaker.make_box_with_markdown_path(box) }}
+
+
+    {{ content | safe }}
+{% endblock %}

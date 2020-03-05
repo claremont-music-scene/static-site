@@ -15,5 +15,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "eleventy-plugin-markdown-shortcode": "^1.0.1"
+  }
 }
