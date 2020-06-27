@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div id="main-wrapper">
+    <div class="container">
+        <div class="row gtr-200">
+            <div class="col-8 col-12-medium">
+                <div id="content">
+                    <!-- Content -->
+                    <article>{{ .Content }}</article>
+                </div>
+            </div>
+            <div class="col-4 col-12-medium">
+                <div id="sidebar">
+                    <div class="container">
+                        <div class="row"><img src="/images/Logo-Color-on-White-no-text.svg"
+                                              style="width: 100%; height: auto">
+                        </div>
+                    </div>
+                    {{ partial "events/directory" . }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
