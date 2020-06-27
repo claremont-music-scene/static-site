@@ -6,6 +6,7 @@
 -->
 <html>
 <head>
+    {{ partial "google_analytics" . }}
     <title>Claremont Music Scene</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
@@ -15,7 +16,7 @@
 <div id="page-wrapper">
 
     {{ partial "site_header.html" . }}
-    {{ block "main" . }}<!-- Main -->{{ end }}
+    {{ block "main" . }}<!-- Main --> {{ end }}
     {{ partial "site_footer.html" . }}
 
 </div>
