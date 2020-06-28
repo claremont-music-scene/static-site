@@ -5,6 +5,13 @@
             <!-- Content -->
             <article>{{ .Content }}</article>
         </div>
+        {{ if .Pages }}
+        <ul>
+            {{ range .Pages }}
+                {{ .Render "li" }}
+            {{ end }}
+        </ul>
+        {{ end }}
     </div>
 </div>
 {{ end }}
