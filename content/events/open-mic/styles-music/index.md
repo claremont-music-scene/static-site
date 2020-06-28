@@ -5,3 +5,5 @@ draft: false
 ---
 ## Styles Music Open Mic
 
+Located at the corner of Towne & Foothill.
+
