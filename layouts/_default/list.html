@@ -2,13 +2,15 @@
 <div id="main-wrapper">
     <div class="container">
         <div id="content">
+            {{ partial "breadcrumbs" . }}
+
             <!-- Content -->
             <article>{{ .Content }}</article>
         </div>
         {{ if .Pages }}
         <ul>
             {{ range .Pages }}
-                {{ .Render "li" }}
+            {{ .Render "li" }}
             {{ end }}
         </ul>
         {{ end }}

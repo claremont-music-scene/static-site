@@ -4,6 +4,8 @@
         <div class="row gtr-200">
             <div class="col-8 col-12-medium">
                 <div id="content">
+                    {{ partial "breadcrumbs" . }}
+
                     <!-- Content -->
                     <article>{{ .Content }}</article>
                 </div>
