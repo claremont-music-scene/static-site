@@ -1,27 +1,21 @@
-<!DOCTYPE HTML>
-<!--
-	Verti by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-<head>
-    {{ partial "google_analytics" . }}
-    <title>Claremont Music Scene</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="/main.css"/>
-</head>
-<body class="is-preload no-sidebar">
-<div id="page-wrapper">
+{{- partial "head.html" . -}}
+<body class="is-preload">
 
-    {{ partial "site_header.html" . }}
-    {{ block "main" . }}<!-- Main --> {{ end }}
-    {{ partial "site_footer.html" . }}
+<!-- Wrapper -->
+<div id="wrapper">
 
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+            {{- partial "header.html" . -}}
+            {{- block "main" . }}{{- end }}
+        </div>
+    </div>
+
+    {{- partial "sidebar" . -}}
 </div>
-
-{{ partial "end-of-body-scripts" . }}
-
+{{- partial "end-of-body-scripts" . -}}
 </body>
 </html>

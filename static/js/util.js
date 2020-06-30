@@ -107,7 +107,7 @@
 						if (!config.target.hasClass(config.visibleClass))
 							return;
 
-					// If an events was provided, cancel it.
+					// If an event was provided, cancel it.
 						if (event) {
 
 							event.preventDefault();
@@ -156,7 +156,7 @@
 							if (!href || href == '#' || href == '' || href == '#' + id)
 								return;
 
-							// Cancel original events.
+							// Cancel original event.
 								event.preventDefault();
 								event.stopPropagation();
 

@@ -1,12 +1,10 @@
 {{ define "main" }}
-<div id="main-wrapper">
-    <div class="container">
-        <div id="content">
-            {{ partial "breadcrumbs" . }}
+<!-- Content -->
+<section>
+    <header class="main">
+        <h1>{{ .Title }}</h1>
+    </header>
 
-            <!-- Content -->
-            <article>{{ .Content }}</article>
-        </div>
-    </div>
-</div>
+    {{ .Content }}
+</section>
 {{ end }}
