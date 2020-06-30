@@ -1,19 +1,20 @@
 {{ define "main" }}
-<div id="main-wrapper">
-    <div class="container">
-        <div id="content">
-            {{ partial "breadcrumbs" . }}
+<!-- Content -->
+<section>
+    {{ partial "breadcrumbs" . }}
 
-            <!-- Content -->
-            <article>{{ .Content }}</article>
-        </div>
-        {{ if .Pages }}
-        <ul>
-            {{ range .Pages }}
-            {{ .Render "li" }}
-            {{ end }}
-        </ul>
+    <header class="main">
+        <h1>{{ .Title }}</h1>
+    </header>
+
+    {{ .Content }}
+
+    {{ if .Pages }}
+    <ul>
+        {{ range .Pages }}
+        {{ .Render "li" }}
         {{ end }}
-    </div>
-</div>
+    </ul>
+    {{ end }}
+</section>
 {{ end }}
