@@ -2,9 +2,52 @@
 {{ $header := .Get "header" }}
 {{ $imgAlt := .Get "img_alt" }}
 {{/* get file that matches the filename as specified as src="" in shortcode */}}
-{{ $img := .Page.Resources.GetMatch (printf "*%s*" (.Get "img_src")) }}
+
+
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "img_src")) }}
+
+{{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
+{{ $tinyw := "220x" }}
+{{ $smallw := "344x" }}
+{{ $mediumw := "446x" }}
+{{ $largew := "640x" }}
+
+{{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
+{{ .Scratch.Set "small" ($src.Resize $smallw) }}
+{{ .Scratch.Set "medium" ($src.Resize $mediumw) }}
+{{ .Scratch.Set "large" ($src.Resize $largew) }}
+{{ $tiny := .Scratch.Get "tiny" }}
+{{ $small := .Scratch.Get "small" }}
+{{ $medium := .Scratch.Get "medium" }}
+{{ $large := .Scratch.Get "large" }}
+
+{{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
+{{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
+
 <article>
-    <a href="{{ $url }}" class="image"><img src="{{ $img.Permalink }}" alt="{{ $imgAlt }}"/></a>
+    <a href="{{ $url }}" class="image">
+        <img
+          {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}si  zes="(min-width: 35em) 640px, 100vw"{{ end }}
+          srcset='
+          {{ if ge $src.Width "220" }}
+            {{ with $tiny.RelPermalink }}, {{.}} 220w{{ end }}
+          {{ end }}
+          {{ if ge $src.Width "344" }}
+            {{ with $small.RelPermalink }}, {{.}} 344w{{ end }}
+          {{ end }}
+          {{ if ge $src.Width "446" }}
+            {{ with $medium.RelPermalink }}, {{.}} 446w{{ end }}
+          {{ end }}
+          {{ if ge $src.Width "640" }}
+            {{ with $large.RelPermalink }}, {{.}} 640w {{ end }}
+          {{ end }}'
+          {{ if .Get (print $medium) }}
+            src="{{ $medium.RelPermalink }}"
+          {{ else }}
+            src="{{ $src.RelPermalink }}"
+          {{ end }}
+          {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+    </a>
     <h3>{{ $header }}</h3>
     {{.Inner}}
     <ul class="actions">
