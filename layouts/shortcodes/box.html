@@ -1,0 +1,13 @@
+{{ $url := .Get "url" }}
+{{ $header := .Get "header" }}
+{{ $imgAlt := .Get "img_alt" }}
+{{/* get file that matches the filename as specified as src="" in shortcode */}}
+{{ $img := .Page.Resources.GetMatch (printf "*%s*" (.Get "img_src")) }}
+<article>
+    <a href="{{ $url }}" class="image"><img src="{{ $img.Permalink }}" alt="{{ $imgAlt }}"/></a>
+    <h3>{{ $header }}</h3>
+    {{.Inner}}
+    <ul class="actions">
+        <li><a href="{{ $url }}" class="button">More</a></li>
+    </ul>
+</article>

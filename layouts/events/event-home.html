@@ -1,35 +1,6 @@
 {{ define "main" }}
 <section>
-    <div class="posts">
-        <article>
-            <a href="/events/calendar/" class="image"><img src="{{ $image := .Resources.GetMatch "technopagan.jpg" }}{{ if $image }} {{$image.Permalink }}{{end}}" alt="Technopagan performs at Friday Nigths Live in front of city hall"/></a>
-            <h3>Events and Experiences</h3>
-            <p>Check out our <a href="/events/calendar/">events calendar</p>
-            <ul class="actions">
-                <li><a href="/events/calendar/" class="button">More</a></li>
-            </ul>
-        </article>
-
-        <article>
-            <a href="/events/guide/" class="image"><img src="{{ $image := .Resources.GetMatch "tabula-rasa-junction.jpg" }}{{ if $image }} {{$image.Permalink }}{{end}}" alt="Technopagan performs at Friday Nigths Live in front of city hall"/></a>
-            <h3>Local Music / Open Mics / Jam Sessions</h3>
-            <p>Use our <a href="/events/guide/">events guide</a> to help connect you to
-                the best opportunities for:</p>
-            <ul>
-                <li>Local music performances</li>
-                <li><a href="/events/open-mic/">Open Mics</a> in the area</li>
-                <li>Jam sessions, drum circles</li>
-                <li>Highlighting opportunities for people of all ages and experience
-                    levels.
-                </li>
-            </ul>
-            <ul class="actions">
-                <li><a href="/events/guide/" class="button">More</a></li>
-            </ul>
-        </article>
-
-
-    </div>
+    {{.Content}}
 </section>
 
 
