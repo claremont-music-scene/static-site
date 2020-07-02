@@ -8,13 +8,9 @@
 {{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "img_src")) }}
 {{ if $src }}
 {{ else }}
-{{printf "here" .}}
-  {{ $_shared := .Site.GetPage "/_shared" }}
-{{ printf "%#v" $_shared}}
-
-  {{ $src := $_shared.Resources.GetMatch (printf "*%s*" (.Get "img_src")) }}
-{{ printf "%#v" $src}}
-
+  {{ $_shared := .Site.GetPage "section" "shared" }}
+      {{$src := $_shared.Resources.GetMatch "**.png"}}
+        {{/* $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) */}}
 {{end}}
 
 {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
