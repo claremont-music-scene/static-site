@@ -1,10 +1,21 @@
 {{ $url := .Get "url" }}
 {{ $header := .Get "header" }}
 {{ $imgAlt := .Get "img_alt" }}
-{{/* get file that matches the filename as specified as src="" in shortcode */}}
+{{/* get file that matches the filename as specified as img_src="" in shortcode */}}
 
 
+{{/* TODO try lookup from headless waterfall - site, section, featured */}}
 {{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "img_src")) }}
+{{ if $src }}
+{{ else }}
+{{printf "here" .}}
+  {{ $_shared := .Site.GetPage "/_shared" }}
+{{ printf "%#v" $_shared}}
+
+  {{ $src := $_shared.Resources.GetMatch (printf "*%s*" (.Get "img_src")) }}
+{{ printf "%#v" $src}}
+
+{{end}}
 
 {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
 {{ $tinyw := "220x" }}
@@ -22,12 +33,14 @@
 {{ $large := .Scratch.Get "large" }}
 
 {{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
+
+{{/* TODO fix the breakpoint etc. */}}
 {{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
 
 <article>
     <a href="{{ $url }}" class="image">
         <img
-          {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}si  zes="(min-width: 35em) 640px, 100vw"{{ end }}
+          {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 640px, 100vw"{{ end }}
           srcset='
           {{ if ge $src.Width "220" }}
             {{ with $tiny.RelPermalink }}, {{.}} 220w{{ end }}

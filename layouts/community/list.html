@@ -1,0 +1,23 @@
+{{ define "main" }}
+<!-- Content -->
+<section>
+    {{ partial "breadcrumbs" . }}
+
+    <header class="main">
+        <h1>{{ .Title }}</h1>
+    </header>
+
+    {{ $featured := .Site.GetPage "/community/_featured" }}
+    {{ $featured.Content }}
+
+    {{ .Content }}
+
+    {{ if .Pages }}
+    <ul>
+        {{ range .Pages }}
+        {{ .Render "li" }}
+        {{ end }}
+    </ul>
+    {{ end }}
+</section>
+{{ end }}
