@@ -15,10 +15,10 @@
 {{end}}
 
 {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
-{{ $tinyw := "220x" }}
-{{ $smallw := "344x" }}
-{{ $mediumw := "446x" }}
-{{ $largew := "640x" }}
+{{ $tinyw := "210x" }}
+{{ $smallw := "256x" }}
+{{ $mediumw := "430x" }}
+{{ $largew := "650x" }}
 
 {{ $src := .Scratch.Get "src_image" }}
 {{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
@@ -32,25 +32,24 @@
 
 {{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
 
-{{/* TODO fix the breakpoint etc. */}}
-{{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
+{{/* TODO inline the resize */}}
 
 <article>
     <a href="{{ $url }}" class="image">
         <img
-          {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 640px, 100vw"{{ end }}
+          {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}sizes="(min-width: 30em) 43vw, 95vw"{{ end }}
           srcset='
-          {{ if ge $src.Width "220" }}
-            {{ with $tiny.RelPermalink }}, {{.}} 220w{{ end }}
+          {{ if ge $src.Width "210" }}
+            {{ with $tiny.RelPermalink }}, {{.}} 210w{{ end }}
           {{ end }}
-          {{ if ge $src.Width "344" }}
-            {{ with $small.RelPermalink }}, {{.}} 344w{{ end }}
+          {{ if ge $src.Width "256" }}
+            {{ with $small.RelPermalink }}, {{.}} 256w{{ end }}
           {{ end }}
-          {{ if ge $src.Width "446" }}
-            {{ with $medium.RelPermalink }}, {{.}} 446w{{ end }}
+          {{ if ge $src.Width "430" }}
+            {{ with $medium.RelPermalink }}, {{.}} 430w{{ end }}
           {{ end }}
-          {{ if ge $src.Width "640" }}
-            {{ with $large.RelPermalink }}, {{.}} 640w {{ end }}
+          {{ if ge $src.Width "650" }}
+            {{ with $large.RelPermalink }}, {{.}} 650w {{ end }}
           {{ end }}'
           {{ if .Get (print $medium) }}
             src="{{ $medium.RelPermalink }}"
