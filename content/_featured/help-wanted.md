@@ -6,6 +6,8 @@ type: "site"
 image: "Logo-Color-on-White-no-text-416x256px.png"
 image_alt: "Claremont Music Scene color logo"
 headline: "Help Out with the Music Scene"
+url: ""
+action_text: "Learn about opportunities"
 ---
 Are you a local educator, instructor, or tutor? Let us know about:
 

@@ -2,8 +2,10 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: false
-type: "TODO get Section"
+type: ""
 image: ""
 image_alt: ""
 headline: ""
+url: ""
+action_text: ""
 ---
