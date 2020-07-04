@@ -3,13 +3,10 @@
 {{ $imgAlt := .Get "img_alt" }}
 
 {{/* get file that matches the filename as specified as img_src="" in shortcode */}}
-{{/* TODO try lookup from headless waterfall - site, section, featured */}}
-
 
 {{ $_shared := .Site.GetPage "section" "_shared" }}
 
 {{ .Scratch.Set "src_image" (.Page.Resources.GetMatch (printf "*%s*" (.Get "img_src"))) }}
-
 {{ if not (.Scratch.Get "src_image") }}
   {{ .Scratch.Set "src_image" ($_shared.Resources.GetMatch "**") }}
 {{end}}
