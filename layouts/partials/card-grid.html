@@ -1,0 +1,14 @@
+<div class="posts">
+  {{ range . }}
+    <article>
+        <a href="{{ .Params.url }}" class="image">
+            {{ partial "resp-img" . }}
+        </a>
+        <h3>{{ .Params.headline }}</h3>
+        {{.Content}}
+        <ul class="actions">
+            <li><a href="{{ .Params.url }}" class="button">{{ with .Params.Get "action_text" }}{{ . }}{{ else }}More{{ end }}</a></li>
+        </ul>
+    </article>
+  {{ end }}
+</div>

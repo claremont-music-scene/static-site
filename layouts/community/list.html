@@ -7,8 +7,7 @@
         <h1>{{ .Title }}</h1>
     </header>
 
-    {{ $featured := .Site.GetPage "/community/_featured" }}
-    {{ $featured.Content }}
+    {{ partial "card-grid" (partial "featured/get_list" .) }}
 
     {{ .Content }}
 

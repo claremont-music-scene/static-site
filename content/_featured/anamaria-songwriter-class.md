@@ -6,7 +6,7 @@ type: "community/learning"
 image: "songwriter-workshop.jpg"
 image_alt: "Anamaria De La Cruz is teaching an online songwriting course for kids"
 headline: "Kids Songwriting Course"
-url: ""
+url: "/community/"
 action_text: "More Information"
 ---
 Anamaria De La Cruz is offering an online songwriting course for kids

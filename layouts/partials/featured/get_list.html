@@ -1,0 +1,2 @@
+{{ $_featured := .Site.GetPage "section" "_featured" }}
+{{ return $_featured.Resources.ByType "page" }}

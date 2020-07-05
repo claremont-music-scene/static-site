@@ -18,7 +18,6 @@
             {{- partial "header" . -}}
 
             <!-- Banner -->
-
             <section id="banner">
                 <div class="content">
                     <header>
@@ -27,121 +26,12 @@
                     </header>
 
                 </div>
-                <span class="image object">
-										<img src="/images/Logo-Color-on-White-no-text.svg"
-                                             style="width:100%;height:auto">
-									</span>
+                <span class="image object"><img src="/images/Logo-Color-on-White-no-text.svg" style="width:100%;height:auto"></span>
             </section>
 
+            {{ partial "highlights" . }}
+            {{ partial "card-grid" (partial "featured/get_list" .) }}
 
-            <!-- Section -->
-            <section>
-                <header class="major">
-                    <h2>Connect With The Community</h2>
-                </header>
-                <div class="features">
-                    <article>
-                        <span class="icon fa-calendar-alt"></span>
-                        <div class="content">
-                            <h3><a href="/events/">Events Calendar & Guide</a></h3>
-                            <p>Check out our events calendar to find out what's happening in the area.
-
-                                Our guides for ongoing events like open mics and music series performances will keep you
-                                informed.</p>
-                        </div>
-                    </article>
-                    <article>
-                        <span class="icon solid fa-graduation-cap"></span>
-                        <div class="content">
-                            <h3><a href="/community/">Learning & Lessons</a></h3>
-                            <p>Explore opportunities for learning: private lessons, group classes, music schools,
-                                recreational classes, etc.</p>
-                        </div>
-                    </article>
-                    <article>
-                        <span class="icon solid fa-bullhorn"></span>
-                        <div class="content">
-                            <h3><a href="/events/planning/">Planning & Promoting</a></h3>
-                            <p>Planning an event or have an idea? We can help with finding venues, connecting with
-                                performers, and distributing information to our audience.</p>
-                        </div>
-                    </article>
-                    <article>
-                        <span class="icon solid fa-book-open"></span>
-                        <div class="content">
-                            <h3>Information & Archives</h3>
-                            <p><a href="/news/">News articles</a>, photo and video galleries, event listings, venue
-                                information</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            {{ partial "featured" . }}
-            <!-- Section -->
-            <!--
-            <section>
-                <header class="major">
-                    <h2>Ipsum sed dolor</h2>
-                </header>
-                <div class="posts">
-                    <article>
-                        <a href="#" class="image"><img src="images/pic01.jpg" alt=""/></a>
-                        <h3>Interdum aenean</h3>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                            ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <ul class="actions">
-                            <li><a href="#" class="button">More</a></li>
-                        </ul>
-                    </article>
-                    <article>
-                        <a href="#" class="image"><img src="images/pic02.jpg" alt=""/></a>
-                        <h3>Nulla amet dolore</h3>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                            ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <ul class="actions">
-                            <li><a href="#" class="button">More</a></li>
-                        </ul>
-                    </article>
-                    <article>
-                        <a href="#" class="image"><img src="images/pic03.jpg" alt=""/></a>
-                        <h3>Tempus ullamcorper</h3>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                            ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <ul class="actions">
-                            <li><a href="#" class="button">More</a></li>
-                        </ul>
-                    </article>
-                    <article>
-                        <a href="#" class="image"><img src="images/pic04.jpg" alt=""/></a>
-                        <h3>Sed etiam facilis</h3>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                            ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <ul class="actions">
-                            <li><a href="#" class="button">More</a></li>
-                        </ul>
-                    </article>
-                    <article>
-                        <a href="#" class="image"><img src="images/pic05.jpg" alt=""/></a>
-                        <h3>Feugiat lorem aenean</h3>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                            ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <ul class="actions">
-                            <li><a href="#" class="button">More</a></li>
-                        </ul>
-                    </article>
-                    <article>
-                        <a href="#" class="image"><img src="images/pic06.jpg" alt=""/></a>
-                        <h3>Amet varius aliquam</h3>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                            ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <ul class="actions">
-                            <li><a href="#" class="button">More</a></li>
-                        </ul>
-                    </article>
-                </div>
-            </section>
-            -->
         </div>
     </div>
 
