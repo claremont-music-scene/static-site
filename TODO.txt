@@ -5,12 +5,11 @@ venue pages
 terms & conditions
 privacy
 sitemap
-open mic image needs responsive
+monday night concerts info, gallery, primary image
+  - ask Alan about video
 featured items can live anywhere, type=featured
-icon list to partials
 friday nights live info, gallery, primary image
 styles open mic info, gallery, primary image
-monday night concerts info, gallery, primary image
 fix favicon
 dump the calendar
 dev site / local.claremontmusicscene

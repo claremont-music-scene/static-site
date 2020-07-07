@@ -1,0 +1,23 @@
+{{/* Takes a dict: src, sizes [opt] image resource and optionally list of sizes/breakpoints for srcset. Outputs */}}
+{{/* Outputs img tag with sizes and srcset */}}
+
+{{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
+{{ $tinyw := "210x" }}
+{{ $smallw := "256x" }}
+{{ $mediumw := "430x" }}
+{{ $largew := "650x" }}
+
+{{/* TODO only use images smaller than or equal to the src (original) image size?, as Hugo will upscale small images */}}
+
+<img
+    srcset="
+        {{ (.src.Resize "320x").RelPermalink }} 320w,
+        {{ (.src.Resize "640x").RelPermalink }} 640w,
+        {{ (.src.Resize "768x").RelPermalink }} 768w,
+        {{ (.src.Resize "1024x").RelPermalink }} 1024w,
+        {{ (.src.Resize "1366x").RelPermalink }} 1366w,
+        {{ (.src.Resize "1600x").RelPermalink }} 1600w,
+        {{ (.src.Resize "1920x").RelPermalink }} 1920w"
+    {{with .sizes}}sizes="{{.}}"{{else}}sizes="100vw"{{end}}
+    src="{{ (.src.Resize "640x").RelPermalink }}"
+/>

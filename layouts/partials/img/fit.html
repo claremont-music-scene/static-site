@@ -1,0 +1,6 @@
+{{/* Takes an image resource */}}
+{{ if . }}
+<span class="image fit">
+    {{ partial "img/responsive" (dict "src" . "sizes" "88vw") }}
+</span>
+{{ end }}

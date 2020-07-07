@@ -1,0 +1,16 @@
+{{ define "main" }}
+<!-- Content -->
+<section>
+    {{ partial "breadcrumbs" . }}
+    <header class="main">
+        <h1>{{ .Title }}</h1>
+        {{ if .Params.primary_image }}
+            {{ partial "__log" .Params.primary_image}}
+                    {{ partial "__log" (.Resources.GetMatch .Params.primary_image)}}
+
+            {{ partial "img/fit" (.Resources.GetMatch .Params.primary_image) }}
+        {{ end }}
+    </header>
+    Yo{{ .Content }}
+</section>
+{{ end }}

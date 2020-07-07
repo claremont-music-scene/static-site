@@ -1,8 +1,20 @@
+{{ $_featured := site.GetPage "section" "_featured" }}
+{{ $_shared := site.GetPage "section" "_shared" }}
+
 <div class="posts">
   {{ range . }}
+
+    {{/* Resolve the image resource from either featured or shared dirs */}}
+    {{ $_scratch := newScratch }}
+    {{ $_scratch.Set "src" ($_featured.Resources.GetMatch .Params.image) }}
+    {{ if $_scratch.Get "src" }}
+    {{ else }}
+      {{ $_scratch.Set "src" ($_shared.Resources.GetMatch .Params.image)}}
+    {{ end }}
+
     <article>
         <a href="{{ .Params.url }}" class="image">
-            {{ partial "resp-img" . }}
+            {{ partial "img/responsive" (dict "src" ($_scratch.Get "src") "sizes" "(min-width: 30em) 43vw, 95vw")  }}
         </a>
         <h3>{{ .Params.headline }}</h3>
         {{.Content}}
