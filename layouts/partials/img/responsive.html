@@ -8,7 +8,7 @@
 {{ $largew := "650x" }}
 
 {{/* TODO only use images smaller than or equal to the src (original) image size?, as Hugo will upscale small images */}}
-
+{{/* TODO restore alt, caption */}}
 <img
     srcset="
         {{ (.src.Resize "320x").RelPermalink }} 320w,

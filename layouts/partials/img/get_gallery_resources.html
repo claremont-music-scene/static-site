@@ -1,0 +1,6 @@
+{{ $_s := newScratch }}
+{{ $resources := .Resources }}
+{{ range .Params.gallery }}
+    {{ $_s.Add "img_list" (slice ($resources.GetMatch .)) }}
+{{ end }}
+{{ return $_s.Get "img_list" }}

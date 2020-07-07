@@ -1,0 +1,9 @@
+{{/* takes a list of image resources */}}
+{{/* TODO sizes */}}
+<div class="box alt">
+    <div class="row gtr-50 gtr-uniform">
+        {{ range . }}
+        <div class="col-4"><span class="image fit">{{ partial "img/responsive" (dict "src" .) }}</span></div>
+        {{ end }}
+    </div>
+</div>
