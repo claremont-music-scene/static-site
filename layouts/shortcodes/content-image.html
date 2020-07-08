@@ -1,2 +1,0 @@
-{{- $image := .Page.Resources.GetMatch "**.jpg" -}}
-{{ if $image }}<img src="{{ ($image.Fill "800x600" ).Permalink }}" />{{ end }}

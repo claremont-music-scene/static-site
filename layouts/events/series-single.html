@@ -2,11 +2,14 @@
 <!-- Content -->
 <section>
     {{ partial "breadcrumbs" . }}
+
+    <!-- TODO split into 2 columns, use a box for overview -->
+
     <header class="main">
         {{ if .Params.primary_image }}
             {{ partial "img/fit" (.Resources.GetMatch .Params.primary_image) }}
         {{ end }}
-        <h1>{{ .Title }}</h1>
+        <h1>Series: {{ .Title }}</h1>
     </header>
 
     {{ .Content }}
