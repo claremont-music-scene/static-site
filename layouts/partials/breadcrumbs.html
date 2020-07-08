@@ -9,10 +9,10 @@
     {{ end }}
 
     {{ if eq .p1 .p2 }}
-      <span class="active">{{ .p1.Title }}</span>
+
     {{ else }}
       <span>
-        <a href="{{ .p1.Permalink }}">{{ if .p1.IsHome }}Home{{ else }}{{ .p1.Title }}{{ end }}</a> /
+        <a href="{{ .p1.Permalink }}">{{ if .p1.IsHome }}Home{{ else }}{{ .p1.Title }}{{ end }}</a> &nbsp; &nbsp;
       </span>
     {{ end }}
 {{ end }}

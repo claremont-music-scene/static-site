@@ -3,16 +3,23 @@
 <section>
     {{ partial "breadcrumbs" . }}
 
-    <!-- TODO split into 2 columns, use a box for overview -->
+    <div class="row">
+        <div class="col-6 col-12-medium">
+            {{ partial "box-with-title" (dict "Content" .Content "title" .Title) }}
+        </div>
+        <div class="col-6 col-12-medium">
+            <header class="main">
+                {{ if .Params.primary_image }}
+                {{ partial "img/fit" (.Resources.GetMatch .Params.primary_image) }}
+                {{ end }}
+            </header>
+        </div>
 
-    <header class="main">
-        {{ if .Params.primary_image }}
-            {{ partial "img/fit" (.Resources.GetMatch .Params.primary_image) }}
-        {{ end }}
-        <h1>Series: {{ .Title }}</h1>
-    </header>
+    </div>
+
 
     {{ .Content }}
+
 
     {{ partial "img/grid" (partial "img/get_gallery_resources" .) }}
 
