@@ -7,7 +7,7 @@ take breadcrumbs out of the <section>
 meta titles / seo basics
 svg handling for img tag
 dump the calendar
-
+deprecate themes dirs
 dev site / local.claremontmusicscene
 tighten header spacing
 venue pages

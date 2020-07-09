@@ -1,8 +1,6 @@
 {{ define "main" }}
 <!-- Content -->
 <section>
-    {{ partial "breadcrumbs" . }}
-
     <div class="row">
         <div class="col-6 col-12-medium">
             {{ partial "box-with-title" (dict "Content" .Content "title" .Title) }}
@@ -17,9 +15,7 @@
 
     </div>
 
-
     {{ .Content }}
-
 
     {{ partial "img/grid" (partial "img/get_gallery_resources" .) }}
 
