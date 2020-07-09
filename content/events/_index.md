@@ -7,16 +7,12 @@ layout: event-home
 
 {{< cards >}}
   
-{{% card header="Events and Experiences" url="/events/calendar/" img_src="technopagan.jpg" %}}
-The events calendar will help keep you up-to-date with information about 
-music events in and around Claremont, CA.  
+{{% card header="Series and Special Events" url="/events/series/" img_src="technopagan.jpg" %}}
+Get information about the different types of regular and special events around the area. There's usually a weekly event or a seasonal festival going on.
 {{% /card %}}
   
-{{% card header="Local Hangouts / Open Mic / Jam Sessions" url="/events/guide/" img_src="tabula-rasa-junction.jpg" %}}
-* Local music performances
-* Open Mics in the area
-* Jam sessions, drum circles
-* Highlighting opportunities for people of all ages and experience levels.  
+{{% card header="Open Mics" url="/events/open-mic/" img_src="tabula-rasa-junction.jpg" %}}
+Find local open mic events
 {{% /card %}}
 
 {{< /cards >}}

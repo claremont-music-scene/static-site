@@ -2,13 +2,7 @@
 <!-- Content -->
 <section>
     <div class="row">
-        <div class="col-6 col-12-medium">
-            <header class="main">
-                {{ if .Params.primary_image }}
-                {{ partial "img/fit" (.Resources.GetMatch .Params.primary_image) }}
-                {{ end }}
-            </header>
-        </div>
+
         <div class="col-6 col-12-medium">
             <h3>{{ .Title }}</h3>
             <!--<div class="box">-->
@@ -36,8 +30,7 @@
                         {{ end }}
                         {{ with .Params.Get "notes" }}
                             <tr>
-                                <td>&nbsp;</td>
-                                <td>{{ . }}</td>
+                                <td colspan="2">{{ . }}</td>
                             </tr>
                         {{ end }}
                         </tbody>
@@ -46,6 +39,14 @@
                 </div>
            <!-- </div>-->
 
+        </div>
+
+        <div class="col-6 col-12-medium">
+            <header class="main">
+                {{ if .Params.primary_image }}
+                {{ partial "img/fit" (.Resources.GetMatch .Params.primary_image) }}
+                {{ end }}
+            </header>
         </div>
 
     </div>
