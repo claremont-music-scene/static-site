@@ -3,6 +3,7 @@ card shortcode should use card and img partials
 monday night concerts info, gallery, primary image
   - ask Alan about video
 
+take breadcrumbs out of the <section>
 meta titles / seo basics
 svg handling for img tag
 dump the calendar

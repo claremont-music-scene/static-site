@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+
+<!-- Content -->
+<section>
+    {{ partial "breadcrumbs" . }}
+
+    <header class="main">
+        <h1>{{ .Title }}</h1>
+    </header>
+    <div class="row">
+        <div class="col-6 col-12-medium">
+            {{ .Content }}
+        </div>
+        <div class="col-6 col-12-medium">
+            {{ if .Pages }}
+            <ul>
+                {{ range .Pages }}
+                    {{ .Render "li" }}
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+    </div>
+
+
+</section>
+{{ end }}
