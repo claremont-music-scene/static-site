@@ -3,14 +3,49 @@
 <section>
     <div class="row">
         <div class="col-6 col-12-medium">
-            {{ partial "box-with-title" (dict "Content" .Content "title" .Title) }}
-        </div>
-        <div class="col-6 col-12-medium">
             <header class="main">
                 {{ if .Params.primary_image }}
                 {{ partial "img/fit" (.Resources.GetMatch .Params.primary_image) }}
                 {{ end }}
             </header>
+        </div>
+        <div class="col-6 col-12-medium">
+            <h3>{{ .Title }}</h3>
+            <!--<div class="box">-->
+
+                <div class="table-wrapper">
+                    <table>
+                        <tbody>
+                        {{ with .Params.Get "location" }}
+                            <tr>
+                                <td>Where</td>
+                                <td>{{ . }}</td>
+                            </tr>
+                        {{ end }}
+                        {{ with .Params.Get "start_time" }}
+                            <tr>
+                                <td>When</td>
+                                <td>{{ . }}</td>
+                            </tr>
+                        {{ end }}
+                        {{ with .Params.Get "repeats" }}
+                            <tr>
+                                <td>How Often</td>
+                                <td>{{ . }}</td>
+                            </tr>
+                        {{ end }}
+                        {{ with .Params.Get "notes" }}
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>{{ . }}</td>
+                            </tr>
+                        {{ end }}
+                        </tbody>
+
+                    </table>
+                </div>
+           <!-- </div>-->
+
         </div>
 
     </div>

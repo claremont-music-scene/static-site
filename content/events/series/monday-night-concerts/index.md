@@ -5,6 +5,10 @@ draft: false
 primary_image: "monday-night-concerts-banner.jpg"
 layout: "series-single"
 gallery: ["mnc1.jpg", "mnc2.jpg", "mnc3.jpg", "mnc4.jpg", "mnc5.jpg", "mnc6.jpg"]
+location: "Memorial Park"
+start_time: "7pm"
+repeats: Weekly on Mondays
+notes: The Monday Night Concert Series runs during the summer; typically startsing in May and concluding in October
 ---
 
 {{< columns 2 >}}
