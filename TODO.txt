@@ -16,8 +16,14 @@ terms & conditions
 privacy
 sitemap
 
+community projects:
+    homes group
+    music nerds
+
 featured items can live anywhere, type=featured
+
 styles open mic info, gallery, primary image
+
 fix favicon
 use plausible.io
 newsletter signup
