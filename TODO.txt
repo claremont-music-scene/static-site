@@ -17,6 +17,8 @@ add COVID banner to events page (base)
 cleanup home page / featured content
 cleanup about page
 
+privacy policy
+
 ads
   FB
 

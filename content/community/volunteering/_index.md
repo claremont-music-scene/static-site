@@ -2,6 +2,7 @@
 title: "Volunteering"
 date: 2020-07-25T07:30:02-07:00
 draft: false
+layout: volunteer-landing
 ---
 
 The Claremont Music Scene is made possible by a network of like-minded people collaborating together.  This is a place where you can 
