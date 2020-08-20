@@ -14,6 +14,7 @@ find and connect with others around a shared interest: hosting a jam session, a 
 To become a volunteer, we ask that you attend a Volunteer Orientation Meeting.  These are casual Zoom meetings that occur a few times 
 per month at different times and days of the week in hopes of accommodating people's differing schedules. 
 
+Meetings will last for a maximum of 30 minutes; many may be shorter depending on attendance and extent of open discussion. 
 
 
 ### Orientation Meeting Schedule
@@ -23,7 +24,7 @@ per month at different times and days of the week in hopes of accommodating peop
 
 * Monday Lunch Edition - You hadn't gotten any work done yet anyway
 * Tuesday Night Edition - More fun than a political election 
-* Sunday Afternoon Edition - We promise not to tell the pastor
+* Sunday Afternoon Edition - Less commercials than the sports shows
 
 {{% /col %}}
 {{< col-with-box >}}

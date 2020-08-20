@@ -2,10 +2,16 @@
 Volunteer Launch
 ----------------
 
-icon grid for volunteering overview
-email form for Zoom meeting signup
-shortcode for Zoom form
+
+fix grid links to detail pages
 volunteer detail pages
+
+change landing grid into full rows
+
+final volunteer landing cleanup / copy
+netlify / zapier integrations
+  - email zoom codes
+  - add zoom subscribers to spreadsheet
 
 add COVID banner to events page (base)
 cleanup home page / featured content
