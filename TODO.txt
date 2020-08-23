@@ -3,10 +3,9 @@ Volunteer Launch
 ----------------
 
 
-fix grid links to detail pages
-volunteer detail pages
+volunteer detail pages copy
 
-change landing grid into full rows
+zoom meeting section cleanup
 
 final volunteer landing cleanup / copy
 netlify / zapier integrations
