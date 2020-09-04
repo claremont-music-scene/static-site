@@ -23,9 +23,7 @@ friends together in the park for some Parkaoke - open-air karaoke?
 We welcome help and support from any person that acting in a positive and inclusive direction.  If you've done something or 
 are working on something related to music in our area, let us know and we will do our best to recognize and share your efforts to the wider
 community. We also have a more formalized volunteer program that encourages community members to work on designated projects 
-related to directed efforts within the music scene.  
-
-
+related to directed efforts within the music scene.
 
 ### Music Scene Volunteers
 
@@ -33,8 +31,9 @@ Volunteers propose a project to work on for something they're interested in. (We
 your own experience.   There's no hard commitment but if you can average around one hour per month and share a brief update of 
 your work you'll be eligible as an official volunteer.  Volunteers will receive or have access to:
 
-* Seasonal catered meals for recognition and camaraderie
-* A stylish T-shirt showing your pride in the Claremont Music Scene
+* Seasonal catered meals with the volunteer group
+* A profile page on the website for highlighting involvement and achievements
+* A stylish Claremont Music Scene T-shirt 
 * Stickers, decals, and other swag
 
 {{< community_highlights >}}
@@ -47,7 +46,6 @@ per month at different times and days of the week in hopes of accommodating peop
 Meetings will last for a maximum of 30 minutes; many may be shorter depending on attendance and extent of open discussion. 
 
 ### Orientation Meeting Schedule 
-
 
 
 {{< columns 2 >}}

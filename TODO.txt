@@ -4,10 +4,13 @@ Volunteer Launch
 
 
 volunteer detail pages copy
+hide news in nav
+hide learn/lessons in nav
+home page hide featured items
+link to sections on home page
+schedule a zoom meeting
+hide community, sub volunteering
 
-zoom meeting section cleanup
-
-final volunteer landing cleanup / copy
 netlify / zapier integrations
   - email zoom codes
   - add zoom subscribers to spreadsheet
@@ -21,7 +24,7 @@ privacy policy
 ads
   FB
 
-
+--
 theme colors - borders, icons
 event planning form
 news item for MNC virtual edition
