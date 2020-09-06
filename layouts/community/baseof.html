@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+{{- block "themeconfig" . }}
+    <style>
+        :root {
+            --sitecolor-primary: var(--sitecolor-green);
+        }
+    </style>
+{{- end }}
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+            {{- partial "header.html" . -}}
+            {{- block "main" . }}{{- end }}
+        </div>
+    </div>
+
+    {{- partial "sidebar" . -}}
+</div>
+{{- partial "end-of-body-scripts" . -}}
+</body>
+</html>
+

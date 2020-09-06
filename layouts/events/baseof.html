@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 {{- partial "head.html" . -}}
+{{- block "themeconfig" . }}
+    <style>
+        :root {
+            --sitecolor-primary: var(--sitecolor-darkred);
+        }
+    </style>
+{{- end }}
 <body class="is-preload">
 
 <!-- Wrapper -->
