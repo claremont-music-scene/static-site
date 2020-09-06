@@ -7,8 +7,7 @@ netlify / zapier integrations
   - email zoom codes
   - add zoom subscribers to spreadsheet
 
-cleanup about page
-
+about copy
 
 --
 privacy policy
@@ -30,7 +29,6 @@ events home / guide same thing
 
 FNL gallery
 
-dump the calendar
 dev site / local.claremontmusicscene
 tighten header spacing
 venue pages
@@ -40,9 +38,6 @@ terms & conditions
 privacy
 sitemap
 
-community projects:
-    homes group
-    music nerds
 
 featured items can live anywhere, type=featured
 
