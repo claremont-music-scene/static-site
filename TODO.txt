@@ -2,54 +2,55 @@
 Volunteer Launch
 ----------------
 
-
 netlify / zapier integrations
   - email zoom codes
   - add zoom subscribers to spreadsheet
 
-about copy
-
 --
-privacy policy
 ads
   FB
 
 event planning form
 
-
 ----------
+meta titles / seo basics
+get ranked for 'music in claremont'
+
+styles open mic info, gallery, primary image
+folk music gallery and info
+FNL gallery
 
 
 card shortcode should use card and img partials
-
-meta titles / seo basics
 svg handling for img tag
-events home / guide same thing
 
-FNL gallery
+------
+IG post integration
+privacy policy
+complete application
+test account for IG
+terms & conditions
+polling app
+
+----
+
 
 dev site / local.claremontmusicscene
 tighten header spacing
 venue pages
 copy for home page
 
-terms & conditions
-privacy
 sitemap
 
-
 featured items can live anywhere, type=featured
-
-styles open mic info, gallery, primary image
 
 fix favicon
 use plausible.io
 newsletter signup
-event planning form
 microformats
 ARIA
 404 page
-
+improve About Us copy
 squash js round 1
 
 elements demo page

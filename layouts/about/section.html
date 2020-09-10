@@ -1,26 +1,21 @@
 {{ define "main" }}
-<div id="main-wrapper">
-    <div class="container">
-        <div id="content">
+<!-- Content -->
+<section>
 
-            <!-- Content -->
-            <article>
-                <h2>About</h2>
-                <p>Claremont Music Scene was created with a purpose of elevating the music and arts community in and
-                    around Claremont, CA.</p>
-                <p>By creating a network of like minded people and a set of tools and channels for managing an
-                    organic community,
-                    the music scene becomes a product of those who are a part of it. Whether you're a performer,
-                    educator, venue, or a fan -
-                    Claremont Music Scene has something for you. Our events calendar keeps you up-to-date on what's
-                    happening around town.
-                    Use our social media channels and web presence to promote your gigs, fill your classes and to
-                    connect with others.</p>
-            </article>
+    <header class="main">
+        <h2>{{ .Title }}</h2>
+    </header>
 
-        </div>
-    </div>
-</div>
+    {{ .Content }}
+
+    {{ if .Pages }}
+    <ul>
+        {{ range .Pages }}
+        {{ .Render "li" }}
+        {{ end }}
+    </ul>
+    {{ end }}
+</section>
 
 <div class="container"
      style="width: 100%; background-color: #262262; color: white; font-style: italic; padding: 2em 5% 2em 5%; font-size: 2em;">
