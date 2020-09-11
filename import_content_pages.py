@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-
+from functools import partial
 import requests
 
 API_URL = "http://local.music-scene-data.com:8000"
@@ -12,26 +12,35 @@ content_dir = None
 
 content_dir = Path(os.path.dirname(__file__), "content")
 
+# TODO maybe use json for front matter format?
 
 def write_venue(path, obj):
-    # title, date, draft
+
     print(f"Writing {path}")
-
     file = open(path, "w")
-    print("---", file=file)
+    _ = partial(print, **{'file': file})
 
-    print(f"title: {obj['name']}", file=file)
-    print(f"date: {obj['date_modified']}", file=file)
-    print("draft: false", file=file)
-    print("layout: venue-single", file=file)
-
-    for field in ['twitter', 'facebook', 'website', 'address_street']:
+    _("---")
+    _(f"title: {obj['name']}")
+    _(f"date: {obj['date_modified']}")
+    _("draft: false")
+    _("layout: venue-single")
+    for field in [
+            "website",
+            "facebook",
+            "twitter",
+            "instagram",
+            "phone",
+            "email",
+            "address_street",
+            "address_city",
+            "address_full",
+        ]:
         if obj[field]:
-            print(f"{field}: {obj[field]}", file=file)
-
-    print("---\n", file=file)
+            _(f"{field}: {obj[field]}")
+    _("---")
     if obj['description']:
-        print(obj["description"], file=file)
+        _(obj["description"])
 
 
 def main():
