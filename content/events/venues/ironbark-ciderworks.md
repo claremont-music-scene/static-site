@@ -4,6 +4,7 @@ date: 2020-09-11T02:57:02.849885Z
 draft: false
 layout: venue-single
 website: https://ironbarkcider.com/
+calendar_url: https://ironbarkcider.com/calendar/
 facebook: https://www.facebook.com/ironbarkcider/
 twitter: https://twitter.com/ironbarkcider
 address_street: 1420 N Claremont Blvd # 107B

@@ -27,6 +27,7 @@ def write_venue(path, obj):
     _("layout: venue-single")
     for field in [
             "website",
+            "calendar_url",
             "facebook",
             "twitter",
             "instagram",

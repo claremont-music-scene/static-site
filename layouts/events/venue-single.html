@@ -7,37 +7,48 @@
             <h3>{{ .Title }}</h3>
             <!--<div class="box">-->
 
-                <div class="table-wrapper">
-                    <table>
-                        <tbody>
-                        {{ with .Params.Get "website" }}
-                            <tr>
-                                <td>Website</td>
-                                <td>{{ . }}</td>
-                            </tr>
-                        {{ end }}
-                        {{ with .Params.Get "twitter" }}
-                            <tr>
-                                <td>Twitter</td>
-                                <td>{{ . }}</td>
-                            </tr>
-                        {{ end }}
-                        {{ with .Params.Get "facebook" }}
-                            <tr>
-                                <td>Facebook</td>
-                                <td>{{ . }}</td>
-                            </tr>
-                        {{ end }}
-                        {{ with .Params.Get "address" }}
-                            <tr>
-                                <td colspan="2">{{ . }}</td>
-                            </tr>
-                        {{ end }}
-                        </tbody>
+            <div class="table-wrapper">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>Connect</td>
+                        <td>
+                            <ul class="icons">
+                                {{ with .Params.Get "instagram" }}
+                                <li><a href="{{.}}"
+                                       class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                {{ end }}
+                                {{ with .Params.Get "facebook" }}
+                                <li><a href="{{.}}"
+                                       class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                {{ end }}
+                                {{ with .Params.Get "twitter" }}
+                                <li><a href="{{.}}" class="icon brands fa-twitter"><span
+                                        class="label">Twitter</span></a></li>
+                                {{ end }}
+                                {{ with .Params.Get "website" }}
+                                <li><a href="{{.}}"><span
+                                        class="label">Website</span></a></li>
+                                {{ end }}
+                                {{ with .Params.Get "website" }}
+                                <li><a href="{{.}}"><span
+                                        class="label">Events Calendar</span></a></li>
+                                {{ end }}
+                            </ul>
+                        </td>
+                    </tr>
 
-                    </table>
-                </div>
-           <!-- </div>-->
+                    {{ with .Params.Get "address_street" }}
+                    <tr>
+                        <td>Address</td>
+                        <td>{{ . }}, {{ $.Params.Get "address_city" }}</td>
+                    </tr>
+                    {{ end }}
+                    </tbody>
+
+                </table>
+            </div>
+            <!-- </div>-->
 
         </div>
 

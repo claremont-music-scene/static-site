@@ -4,6 +4,7 @@ date: 2020-09-11T02:57:55.839649Z
 draft: false
 layout: venue-single
 website: http://www.folkmusiccenter.com/
+calendar_url: http://www.folkmusiccenter.com/calendar.html
 facebook: https://www.facebook.com/ClaremontFolkMusicCenter
 address_street: 220 Yale Ave
 address_city: Claremont
