@@ -110,7 +110,7 @@ body {
 
 /* Type */
 body, input, select, textarea {
-  color: #7f888f;
+  color: #3d4456;
   font-family: "Arial", sans-serif;
   font-size: 13pt;
   font-weight: 400;
@@ -1741,6 +1741,36 @@ button,
   @media screen and (max-width: 480px) {
     .features article .icon:before {
       font-size: 1.25rem; } }
+
+.features.volunteering {
+  color: #cccccc;
+  background: var(--sitecolor-dark);
+  margin: 0 0 2em 0;
+  width: 100%;}
+  .features article:nth-child(2n - 1) {
+      margin-top: 1.5em; }
+  .features article:nth-child(2n) {
+      margin-top: 1.5em; }
+  .features.volunteering article:nth-last-child(1), .features.volunteering article:nth-last-child(2) {
+      margin-bottom: 2em; }
+
+  .features.volunteering h3 {
+    color: white
+  }
+  .features.volunteering a.button {
+    color: white !important;
+    background: var(--sitecolor-blue);
+    box-shadow: none;
+    border: 1px solid white;
+  }
+  .features.volunteering span.icon {color: white}
+  .features.volunteering span.icon.fa-newspaper {color: var(--sitecolor-yellow)}
+  .features.volunteering span.icon.fa-calendar {color: var(--sitecolor-darkred)}
+  .features.volunteering span.icon.fa-graduation-cap {color: var(--sitecolor-blue)}
+  .features.volunteering span.icon.fa-life-ring {color: var(--sitecolor-red)}
+
+h3.volunteering { border-top: 1px solid var(--sitecolor-dark)}
+
 
 /* Posts */
 .posts {

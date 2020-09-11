@@ -2,6 +2,14 @@
 Volunteer Launch
 ----------------
 
+button style in zoom form
+button style in highlights
+background color for highlights
+mobile view for highlights
+
+update Zoom times
+-- get zoom schedule from events api
+
 netlify / zapier integrations
   - email zoom codes
   - add zoom subscribers to spreadsheet
@@ -9,6 +17,10 @@ netlify / zapier integrations
 --
 ads
   FB
+
+
+github for cms-backend
+
 
 event planning form
 
@@ -37,12 +49,12 @@ polling app
 
 dev site / local.claremontmusicscene
 tighten header spacing
-venue pages
+
 copy for home page
 
 sitemap
 
-featured items can live anywhere, type=featured
+convert forms to use REST API
 
 fix favicon
 use plausible.io
