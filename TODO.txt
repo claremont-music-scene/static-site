@@ -42,13 +42,11 @@ _ about - technology
 Code / Design
 __________________
 
-_ github for cms-backend
 _ news items
 _ mobile view for highlights
 _ use sites
 image storage
 add images to serialized
-fix favicon
 
 --- Users and Auth
     ________________

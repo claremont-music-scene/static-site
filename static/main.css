@@ -1769,7 +1769,9 @@ button,
   .features.volunteering span.icon.fa-graduation-cap {color: var(--sitecolor-blue)}
   .features.volunteering span.icon.fa-life-ring {color: var(--sitecolor-red)}
 
-h3.volunteering { border-top: 1px solid var(--sitecolor-dark)}
+h3.volunteering {
+  border-top: 1px solid var(--sitecolor-dark);
+  margin: 1em 0 .5em 0; }
 
 
 /* Posts */
