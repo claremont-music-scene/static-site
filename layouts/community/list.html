@@ -9,13 +9,47 @@
     {{/* partial "card-grid" (partial "featured/get_list" .) */}}
 
     {{ .Content }}
+    
+    <!-- Section -->
+    <section style="background: #f5f6f7;">
+        <div class="features volunteering">
+            <article>
+                <span class="icon solid fa-guitar"></span>
+                <div class="content">
+                    <h3><a href="/community/music-stores/">Music Stores</a></h3>
+                    <p>Instruments, equipment, repairs, connections to lessons</p>
+                    <a class="button" href="/community/music-stores/">Learn More</a>
+                </div>
+            </article>
+            <article>
+                <span class="icon solid fa-hands-helping"></span>
+                <div class="content">
+                    <h3><a href="/community/volunteering/">Volunteering</a></h3>
+                    <p>Learn about volunteering makes CMS great</p>
+                    <a class="button" href="/community/volunteering/">Learn More</a>
 
-    {{ if .Pages }}
-    <ul>
-        {{ range .Pages }}
-        {{ .Render "li" }}
-        {{ end }}
-    </ul>
-    {{ end }}
+                </div>
+            </article>
+            <article>
+                <span class="icon solid fa-school"></span>
+                <div class="content">
+                    <h3><a href="/community/learning/">Lessons</a></h3>
+                    <p>Directory to local tutors, teachers, classes</p>
+                    <a class="button" href="/community/learning/">Learn More</a>
+
+                </div>
+            </article>
+            <article>
+                <span class="icon solid fa-theater-masks"></span>
+                <div class="content">
+                    <h3><a href="/community/performers/">Performers</a></h3>
+                    <p>People, performers, audio clips maybe</p>
+                    <a class="button" href="/community/performers/">Learn More</a>
+
+                </div>
+            </article>
+        </div>
+    </section>
 </section>
+
 {{ end }}
