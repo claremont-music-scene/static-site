@@ -1,45 +1,59 @@
 
-
-
-
-
-----------------
-ads
-----
+Advertising / Promotion
+__________________
+  post about blog story
+  post about scarecrow
   FB
+...................................................
 
-----
-
-
-
---------------
 Content
----
-replace Event Directory with venues list
-"music in claremont" - volunteering, venues, events guide
-ordering for venues
-styles open mic info, gallery, primary image
-folk music gallery and info
-FNL gallery
-copy for home page
-add venues
-about - philosophy
-about - history
-about - technology
-------------
+__________________
+
+--- News Items
+    _______________________
+ - (featured) call for volunteers
+ - elementary programs
+ - (featured) scarecrow
+ - (featured) blog
+
+--- SEO
+    __________________________
+- "music in claremont" - volunteering, venues, events guide
+- meta titles / seo basics
 
 
--------------
+- styles open mic info, gallery, primary image
+- folk music gallery and info
+- FNL gallery
+
+- copy for home page
+
+- add venues
+
+- restore learning
+
+--- ABOUT
+   ____________________
+_ about - philosophy
+_ about - history
+_ about - technology
+...................................................
+
 Code / Design
----
-github for cms-backend
+__________________
 
-mobile view for highlights
+_ github for cms-backend
+_ news items
+_ mobile view for highlights
+_ use sites
 image storage
 add images to serialized
-meta titles / seo basics
-get ranked for 'music in claremont'
 fix favicon
+
+--- Users and Auth
+    ________________
+    _ register via API?
+    _ social auth  https://pypi.org/project/rest-social-auth/  or https://dj-rest-auth.readthedocs.io/en/latest/index.html#
 
 event planning form
 netlify / zapier integrations
@@ -47,9 +61,12 @@ netlify / zapier integrations
   - add zoom subscribers to spreadsheet
 
 
+drop the sidebar
+use GH responsive design for inspiration
 
 get zoom schedule from events api
 dev site / local.claremontmusicscene
+generic music scene
 tighten header spacing
 sitemap
 convert forms to use REST API
@@ -62,19 +79,23 @@ microformats
 ARIA
 404 page
 accessibility checks / screen reader
---------------
+...................................................
 
+Classifieds
+__________________
+massonry https://codepen.io/bcmdr/pen/GxROZz
+form
+   message, color/theme, IG / FB / Twitter
+email verify
 
--------------
+...................................................
+
 IG post integration
-----
+__________________
 privacy policy
 complete application
 test account for IG
 terms & conditions
 polling app
 
-------------
-
-elements demo page
-venue full detail demo
+...................................................
