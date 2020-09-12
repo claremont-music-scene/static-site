@@ -1,5 +1,6 @@
 ---
 title: The Press Restaurant
+type: venue
 date: 2020-09-11T03:26:31.096363Z
 draft: false
 layout: venue-single

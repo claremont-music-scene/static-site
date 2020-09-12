@@ -1,5 +1,6 @@
 ---
 title: Walter's Restaurant
+type: venue
 date: 2020-09-11T02:58:27.485210Z
 draft: false
 layout: venue-single

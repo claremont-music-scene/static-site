@@ -22,6 +22,7 @@ def write_venue(path, obj):
 
     _("---")
     _(f"title: {obj['name']}")
+    _("type: venue")
     _(f"date: {obj['date_modified']}")
     _("draft: false")
     _("layout: venue-single")
@@ -47,10 +48,10 @@ def write_venue(path, obj):
 def main():
 
     # Venues
-    venues = requests.get(f"{API_URL}/venues/").json()
+    venues = requests.get(f"{API_URL}/venue/").json()
     for venue in venues:
         filename = venue["slug"]
-        path = Path(content_dir, "events/venues", f"{filename}.md")
+        path = Path(content_dir, "events/venue", f"{filename}.md")
         # if not path.is_file():
         write_venue(path, venue)
 

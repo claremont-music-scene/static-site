@@ -1,69 +1,80 @@
 
-Volunteer Launch
+
+
+
+
 ----------------
+ads
+----
+  FB
 
-button style in zoom form
-button style in highlights
-background color for highlights
+----
+
+
+
+--------------
+Content
+---
+replace Event Directory with venues list
+"music in claremont" - volunteering, venues, events guide
+ordering for venues
+styles open mic info, gallery, primary image
+folk music gallery and info
+FNL gallery
+copy for home page
+add venues
+about - philosophy
+about - history
+about - technology
+------------
+
+
+-------------
+Code / Design
+---
+github for cms-backend
+
 mobile view for highlights
+image storage
+add images to serialized
+meta titles / seo basics
+get ranked for 'music in claremont'
+fix favicon
 
-update Zoom times
--- get zoom schedule from events api
-
+event planning form
 netlify / zapier integrations
   - email zoom codes
   - add zoom subscribers to spreadsheet
 
---
-ads
-  FB
 
 
-github for cms-backend
-
-
-event planning form
-
-----------
-meta titles / seo basics
-get ranked for 'music in claremont'
-
-styles open mic info, gallery, primary image
-folk music gallery and info
-FNL gallery
-
-
+get zoom schedule from events api
+dev site / local.claremontmusicscene
+tighten header spacing
+sitemap
+convert forms to use REST API
 card shortcode should use card and img partials
 svg handling for img tag
+use plausible.io
+newsletter signup
+squash js round 1
+microformats
+ARIA
+404 page
+accessibility checks / screen reader
+--------------
 
-------
+
+-------------
 IG post integration
+----
 privacy policy
 complete application
 test account for IG
 terms & conditions
 polling app
 
-----
-
-
-dev site / local.claremontmusicscene
-tighten header spacing
-
-copy for home page
-
-sitemap
-
-convert forms to use REST API
-
-fix favicon
-use plausible.io
-newsletter signup
-microformats
-ARIA
-404 page
-improve About Us copy
-squash js round 1
+------------
 
 elements demo page
 venue full detail demo

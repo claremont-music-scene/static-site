@@ -1,5 +1,6 @@
 ---
 title: Ironbark Ciderworks
+type: venue
 date: 2020-09-11T02:57:02.849885Z
 draft: false
 layout: venue-single

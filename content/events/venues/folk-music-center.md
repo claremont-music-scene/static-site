@@ -1,5 +1,6 @@
 ---
 title: Folk Music Center
+type: venue
 date: 2020-09-11T02:57:55.839649Z
 draft: false
 layout: venue-single
