@@ -1,7 +1,7 @@
 ---
 title: Candlelight Pavillion
-date: 2020-09-12T14:23:30.783938Z
 type: venue
+date: 2020-09-12T14:23:30.783938Z
 draft: false
 layout: venue-single
 website: https://www.candlelightpavilion.com/

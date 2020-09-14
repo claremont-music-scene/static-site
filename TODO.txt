@@ -16,6 +16,8 @@ __________________
  - (featured) scarecrow
  - (featured) blog
 
+ - Special events list
+
 --- SEO
     __________________________
 - "music in claremont" - volunteering, venues, events guide
@@ -43,15 +45,20 @@ Code / Design
 __________________
 
 _ news items
+_ events venue directory order
 _ mobile view for highlights
+_ import mailing list
+_ events types
 _ use sites
-image storage
-add images to serialized
 
---- Users and Auth
-    ________________
-    _ register via API?
-    _ social auth  https://pypi.org/project/rest-social-auth/  or https://dj-rest-auth.readthedocs.io/en/latest/index.html#
+--| Images
+_ image storage
+_ add images to serialized
+
+
+--| Users and Auth
+_ register via API?
+_ social auth  https://pypi.org/project/rest-social-auth/  or https://dj-rest-auth.readthedocs.io/en/latest/index.html#
 
 event planning form
 netlify / zapier integrations
@@ -63,8 +70,12 @@ drop the sidebar
 use GH responsive design for inspiration
 
 get zoom schedule from events api
+
 dev site / local.claremontmusicscene
 generic music scene
+monorepo?
+use pip compile
+
 tighten header spacing
 sitemap
 convert forms to use REST API
