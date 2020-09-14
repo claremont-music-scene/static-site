@@ -13,10 +13,11 @@ content_dir = Path(os.path.dirname(__file__), "content")
 
 def write_venue(path, obj, is_bundle=False):
 
-    # TODO create new bundle dir if needed
+    # TODO check if leaf is being replaced by bundle and remove the leaf file
+
     if is_bundle:
         if not path.parent.exists():
-            path.mkdir(path.parent)
+            os.mkdir(path.parent)
         print(f"Writing Bundle {path}")
     else:
         print(f"Writing {path}")

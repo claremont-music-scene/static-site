@@ -17,6 +17,8 @@ __________________
  - (featured) blog
 
  - Special events list
+ _ Rosemary morrisey quote
+ _ help wanted boxes for coming soon
 
 --- SEO
     __________________________
@@ -51,10 +53,6 @@ _ import mailing list
 _ events types
 _ use sites
 
---| Images
-_ image storage
-_ add images to serialized
-
 
 --| Users and Auth
 _ register via API?
@@ -70,6 +68,10 @@ drop the sidebar
 use GH responsive design for inspiration
 
 get zoom schedule from events api
+
+--| Images
+_ make a logo / branding kit, store in repo
+_ JIT thumbnail endpoint, cache the sizes
 
 dev site / local.claremontmusicscene
 generic music scene
