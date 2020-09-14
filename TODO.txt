@@ -9,6 +9,8 @@ __________________
 Content
 __________________
 
+_ tighten spacing around mountain logo home page, try for black background?
+
 --- News Items
     _______________________
  - (featured) call for volunteers

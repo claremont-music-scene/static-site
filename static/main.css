@@ -9,6 +9,8 @@
   --sitecolor-lightblue: #00aeef;
   --sitecolor-indigo: #2b3990;
   --sitecolor-dark: #262262;
+    --sitecolor-darker: #131131;
+
   --sitecolor-green: #39b54a;
   --sitecolor-lightgreen: #8dc63f;
   --sitecolor-darkyellow: #dfd723;
@@ -2160,13 +2162,17 @@ h3.volunteering {
 
 /* Banner */
 #banner {
+  padding: 1em 1em 0 1em !important;
+  background: var(--sitecolor-darker);
+  color: white;
   padding: 6em 0 4em 0 ;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex; }
   #banner h1 {
-    margin-top: -0.125em; }
+    margin-top: -0.125em;
+    color: white}
   #banner .content {
     -moz-flex-grow: 1;
     -webkit-flex-grow: 1;
@@ -2187,7 +2193,7 @@ h3.volunteering {
     -ms-flex-shrink: 0;
     flex-shrink: 0;
     display: block;
-    margin: 0 0 2em 4em;
+    /*margin: 0 0 2em 4em;*/
     width: 50%; }
     #banner .image img {
       height: 100%;
@@ -2228,9 +2234,9 @@ h3.volunteering {
         -ms-flex-shrink: 0;
         flex-shrink: 0;
         margin: 0 0 4em 0;
-        height: 25em;
+        /*height: 25em;*/
         max-height: 50vh;
-        min-height: 18em;
+        /*min-height: 18em;*/
         width: 100%; } }
   @media screen and (orientation: portrait) and (max-width: 480px) {
     #banner .image {
