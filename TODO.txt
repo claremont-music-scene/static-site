@@ -9,7 +9,8 @@ __________________
 Content
 __________________
 
-_ tighten spacing around mountain logo home page, try for black background?
+_ improve breakpoint banner layouts from home page
+_ drop the header on the home page
 
 --- News Items
     _______________________
@@ -19,7 +20,7 @@ _ tighten spacing around mountain logo home page, try for black background?
  - (featured) blog
 
  - Special events list
- _ Rosemary morrisey quote
+ _ Rosemary morrisey quote on open mics page
  _ help wanted boxes for coming soon
 
 --- SEO
