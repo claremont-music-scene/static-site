@@ -12,6 +12,8 @@ __________________
 _ improve breakpoint banner layouts from home page
 _ drop the header on the home page
 
+Featured events - FNL w/ gallery pics, MNC
+
 --- News Items
     _______________________
  - (featured) call for volunteers
