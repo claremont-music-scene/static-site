@@ -1,0 +1,25 @@
+{{ define "main" }}
+<!-- Content -->
+<section>
+    <header class="main">
+        <h2>{{ .Title }}</h2>
+    </header>
+
+    {{ .Content }}
+
+    {{ if .Pages }}
+    <div class="posts">
+        {{ range .Pages }}
+         <article>
+            <!--<a href="#" class="image"><img src="images/pic01.jpg" alt=""></a>-->
+            <h3>{{ .Params.title }}</h3>
+            <p>{{ .Content }}</p>
+            <ul class="actions">
+                <li><a href="{{ .Permalink }}" class="button">More Information</a></li>
+            </ul>
+        </article>
+        {{ end }}
+    </div>
+    {{ end }}
+</section>
+{{ end }}
