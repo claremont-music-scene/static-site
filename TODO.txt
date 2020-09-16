@@ -51,6 +51,7 @@ __________________
 
 _ news items
 _ events venue directory order
+_ fix "fit" img for venue cards
 _ mobile view for highlights
 _ import mailing list
 _ events types

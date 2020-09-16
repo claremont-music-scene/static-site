@@ -11,7 +11,7 @@
     <div class="posts">
         {{ range .Pages }}
          <article>
-            <!--<a href="#" class="image"><img src="images/pic01.jpg" alt=""></a>-->
+            <span class="image left"><a href="{{ .Permalink }}" class="image">{{ partial "img/fit" (.Resources.GetMatch .Params.primary_image) }}</a></span>
             <h3>{{ .Params.title }}</h3>
             <p>{{ .Content }}</p>
             <ul class="actions">
