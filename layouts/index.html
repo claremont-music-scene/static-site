@@ -26,11 +26,47 @@
                     </header>
 
                 </div>
-                <span class="image object"><img src="/images/Mountain-Color-WhiteBorder.svg" style="width:100%;height:auto"></span>
+                <span class="image object"><img src="/images/Mountain-Color-WhiteBorder.svg"
+                                                style="width:100%;height:auto"></span>
             </section>
 
             {{ partial "homepage/highlights" . }}
             {{/* partial "card-grid" (partial "featured/get_list" .) */}}
+
+
+            <div class="row">
+                <div class="col-6 col-12-small">
+                    <h3>Want to Help?</h3>
+                    <span class="image left"><img src="/images/Logo-black-and-white-no-text-110x75px.png"/></span>
+                    <p>Have ideas? Like meeting people? Enjoy writing? Like event planning? Have some extra space for
+                        people to use? A philanthropic itch?</p>
+                    <p>Get more information about volunteering with Claremont Music Scene. <a style="background: var(--sitecolor-green);" href="/community/volunteering/" class="button primary large icon solid fa-hands-helping">I'm a Helper!</a></p>
+                </div>
+                <div class="col-6 col-12-small">
+                    <h3>Stay Connected</h3>
+                    <div class="box" style="background: #f5f6f7">
+                        <p>Sign up for our newsletter to receive occasional news and updates.</p>
+                        <form method="post" name="newsletter-signup" data-netlify="true">
+                            <div class="row gtr-uniform">
+
+                                <div class="col-12">
+                                    <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email">
+                                </div>
+
+                                <!-- Break -->
+                                <div class="col-12">
+                                    <ul class="actions">
+                                        <li><input type="submit" value="Sign Up" class="primary"></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
 
         </div>
     </div>

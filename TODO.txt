@@ -9,6 +9,8 @@ __________________
 Content
 __________________
 
+_ newsletter signup home page
+_ scarecrow page
 _ improve breakpoint banner layouts from home page
 _ drop the header on the home page
 
