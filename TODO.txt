@@ -1,16 +1,16 @@
 
 Advertising / Promotion
 __________________
-  post about blog story
   post about scarecrow
-  FB
+  RB advertising role
 ...................................................
 
 Content
 __________________
 
-_ newsletter signup home page
+_ coming soon - wanna help combo box
 _ scarecrow page
+_ newsletter signup in footer
 _ improve breakpoint banner layouts from home page
 _ drop the header on the home page
 
@@ -18,12 +18,13 @@ _ drop the header on the home page
     _______________________
  - (featured) call for volunteers
  - elementary programs
+ - facebook group launch
  - (featured) scarecrow
- - (featured) blog
+ - ...(featured) blog
+
 
  - Special events list
  _ Rosemary morrisey quote on open mics page
- _ help wanted boxes for coming soon
 
 --- SEO
     __________________________
@@ -52,6 +53,7 @@ Code / Design
 __________________
 
 _ news items
+_ zoom signup indicate preferred slot
 _ events venue directory order
 _ fix "fit" img for venue cards
 _ mobile view for highlights

@@ -5,10 +5,17 @@
 
             <!-- Content -->
             <article>
-                <h2></h2>
                 <h2>Notes from the Music Scene</h2>
             </article>
             {{ .Content }}
+
+            {{ if .Pages }}
+    <ul>
+        {{ range .Pages }}
+        {{ .Render "li" }}
+        {{ end }}
+    </ul>
+    {{ end }}
         </div>
     </div>
 </div>{{ end }}
