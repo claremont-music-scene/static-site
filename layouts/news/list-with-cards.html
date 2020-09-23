@@ -13,15 +13,12 @@
 
 
         <article>
-        <a href="{{ .Permalink }}" class="image">
-            {{ partial "img/responsive" (dict "src" (.Resources.GetMatch .Params.primary_image) "sizes" "(min-width: 30em) 43vw, 95vw")  }}
-        </a>
-        <h3>{{ .Params.title }}</h3>
-        {{.Content}}
-        <ul class="actions">
-            <li><a href="{{ .Permalink }}" class="button">{{ with .Params.Get "action_text" }}{{ . }}{{ else }}More{{ end }}</a></li>
-        </ul>
-    </article>
+            <a href="{{ .Permalink }}" class="image">
+                {{ partial "img/responsive" (dict "src" (.Resources.GetMatch .Params.primary_image) "sizes" "(min-width: 30em) 43vw, 95vw") }}
+            </a>
+            <h3><a href="{{.Permalink}}">{{ .Params.title }}</a></h3>
+            {{ with .Params.teaser }}<h4 style="color: #aaaaaa">{{.}}</h4>{{ end }}
+        </article>
         {{ end }}
     </div>
     {{ end }}

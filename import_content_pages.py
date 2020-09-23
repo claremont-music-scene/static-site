@@ -86,7 +86,6 @@ def write_post(path, obj, is_bundle=False):
     _("type: news")
     _(f"date: {obj['date_modified']}")
     _("draft: false")
-    #_("layout: venue-single")
     for field in [
             "slug",
             "teaser",
@@ -95,6 +94,8 @@ def write_post(path, obj, is_bundle=False):
     ]:
         if obj[field]:
             _(f"{field}: {obj[field]}")
+
+    _(f"author: {obj['author']['first_name']} {obj['author']['last_name']}")
 
     # handle images
     # download file and place in dir if not exist

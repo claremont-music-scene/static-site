@@ -1,18 +1,24 @@
 {{ define "main" }}
 <!-- Content -->
-<section style="max-width: 800px">
+<section style="max-width: 800px; margin: auto">
     <div class="content">
         <header>
-            <h1>{{.Title}}</h1>
+            <h2>{{.Title}}</h2>
+            {{ with .Params.teaser }}<h3 style="color: #aaaaaa">{{.}}</h3>{{ end }}
         </header>
         {{ partial "img/fit" (.Resources.GetMatch .Params.primary_image) }}
 
-        <p>By </p>
+        <div style="font-family: 'Trend Sans One'; font-size: 0.9em">
+            <div style="font-weight: bold;">By <span style="color: var(--sitecolor-blue)">{{.Params.author}}</span></div>
+            <div>claremontmusicscene.com</div>
+            <div>{{ dateFormat "Monday, Jan 2, 2006" .Params.date_published}}</div>
+        </div>
 
         <p>{{.Content}}</p>
-        <ul class="actions">
-            <li><a href="#" class="button big">Learn More</a></li>
-        </ul>
+
+        <div>
+
+        </div>
     </div>
     <span class="image object"></span>
 </section>

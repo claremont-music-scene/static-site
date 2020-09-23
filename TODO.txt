@@ -59,20 +59,16 @@ __________________
 
 --- news items
    _____________________
-   _ author in serialized
    _ add featured and order
-   _ queryset published, order by featured
-   _ detail page author info
+   _ queryset order by featured
    _ detail page teaser below headline
-   _ detail page headline size
-   _ detail page center column
-   _ detail page date
    _ list page dates
    _ news page manual
 
 
 _ zoom signup indicate preferred slot
 _ events venue directory order
+_ don't display analytics in debug/local
 _ fix "fit" img for venue cards
 _ mobile view for highlights
 _ import mailing list
