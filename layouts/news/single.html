@@ -1,0 +1,20 @@
+{{ define "main" }}
+<!-- Content -->
+<section style="max-width: 800px">
+    <div class="content">
+        <header>
+            <h1>{{.Title}}</h1>
+        </header>
+        {{ partial "img/fit" (.Resources.GetMatch .Params.primary_image) }}
+
+        <p>By </p>
+
+        <p>{{.Content}}</p>
+        <ul class="actions">
+            <li><a href="#" class="button big">Learn More</a></li>
+        </ul>
+    </div>
+    <span class="image object"></span>
+</section>
+
+{{ end }}

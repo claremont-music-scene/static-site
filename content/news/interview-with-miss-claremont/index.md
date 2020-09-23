@@ -1,10 +1,10 @@
 ---
 title: Interview with Miss Claremont
 type: news
-date: 2020-09-20T14:08:42.327338Z
+date: 2020-09-23T16:54:31.932410Z
 draft: false
 slug: interview-with-miss-claremont
-primary_image: interview_summary.png
+primary_image: Interview_promo_1.6_1.png
 ---
 I recently had the pleasure
 We discussed foundational and philosophical aspects

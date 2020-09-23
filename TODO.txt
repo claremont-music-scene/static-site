@@ -10,7 +10,6 @@ __________________
 
 _ coming soon - wanna help combo box
 _ scarecrow page
-_ newsletter signup in footer
 _ improve breakpoint banner layouts from home page
 _ drop the header on the home page
 
@@ -26,6 +25,13 @@ _ drop the header on the home page
  - Special events list
  _ Rosemary morrisey quote on open mics page
 
+
+--- Community
+    __________________________
+ _ add Groups and Clubs section, Claremont Chorale
+ - restore learning
+
+
 --- SEO
     __________________________
 - "music in claremont" - volunteering, venues, events guide; "claremont music calendar" "claremont music events"
@@ -40,7 +46,6 @@ _ drop the header on the home page
 
 - add venues
 
-- restore learning
 
 --- ABOUT
    ____________________
@@ -52,7 +57,20 @@ _ about - technology
 Code / Design
 __________________
 
-_ news items
+--- news items
+   _____________________
+   _ author in serialized
+   _ add featured and order
+   _ queryset published, order by featured
+   _ detail page author info
+   _ detail page teaser below headline
+   _ detail page headline size
+   _ detail page center column
+   _ detail page date
+   _ list page dates
+   _ news page manual
+
+
 _ zoom signup indicate preferred slot
 _ events venue directory order
 _ fix "fit" img for venue cards
