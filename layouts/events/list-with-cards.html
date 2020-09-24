@@ -9,7 +9,7 @@
 
     {{ if .Pages }}
     <div class="posts">
-        {{ range .Pages }}
+        {{ range .Pages.ByTitle }}
          <article>
             <span class="image left"><a href="{{ .Permalink }}" class="image">{{ partial "img/fit" (.Resources.GetMatch .Params.primary_image) }}</a></span>
             <h3>{{ .Params.title }}</h3>

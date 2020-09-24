@@ -60,7 +60,6 @@ __________________
 --- news items
    _____________________
 
-
    _ detail paginator styles
    _ list grid for non-featured
    _ add featured and order
@@ -68,10 +67,10 @@ __________________
    _ detail page teaser below headline
    _ list page dates
    _ news page manual
+   _ publish to Buffer
 
-
+_ use lastmod, publishdate in frontmatter
 _ zoom signup indicate preferred slot
-_ events venue directory order
 _ don't display analytics in debug/local
 _ fix "fit" img for venue cards
 _ mobile view for highlights
