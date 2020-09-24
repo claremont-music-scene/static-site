@@ -10,14 +10,13 @@
     {{ if .Pages }}
     <div class="posts">
         {{ range .Pages }}
-
-
         <article>
             <a href="{{ .Permalink }}" class="image">
                 {{ partial "img/responsive" (dict "src" (.Resources.GetMatch .Params.primary_image) "sizes" "(min-width: 30em) 43vw, 95vw") }}
             </a>
             <h3><a href="{{.Permalink}}">{{ .Params.title }}</a></h3>
-            {{ with .Params.teaser }}<h4 style="color: #aaaaaa">{{.}}</h4>{{ end }}
+            {{ $url := .Permalink }}
+            {{ with .Params.teaser }}<h4 style="font-size: 1.25em; font-family: 'Arial', sans-serifArial; color: #aaaaaa; margin-top: -1em"><a href="{{ $url }}">{{.}}</a></h4>{{ end }}
         </article>
         {{ end }}
     </div>

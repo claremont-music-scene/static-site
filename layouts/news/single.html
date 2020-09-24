@@ -4,23 +4,23 @@
     <div class="content">
         <header>
             <h2>{{.Title}}</h2>
-            {{ with .Params.teaser }}<h3 style="color: #aaaaaa">{{.}}</h3>{{ end }}
+            {{ with .Params.teaser }}<h3 style="font-size: 1.5em; font-family: 'Arial', sans-serifArial; color: #aaaaaa; margin-top: -1em">{{.}}</h3>{{ end }}
         </header>
         {{ partial "img/fit" (.Resources.GetMatch .Params.primary_image) }}
 
-        <div style="font-family: 'Trend Sans One'; font-size: 0.9em">
+        <div style="font-family: 'Trend Sans One'; font-size: 0.9em; margin-bottom: 4em">
             <div style="font-weight: bold;">By <span style="color: var(--sitecolor-blue)">{{.Params.author}}</span></div>
             <div>claremontmusicscene.com</div>
             <div>{{ dateFormat "Monday, Jan 2, 2006" .Params.date_published}}</div>
         </div>
 
-        <p>{{.Content}}</p>
+        {{.Content}}
 
-        <div>
-
-        </div>
     </div>
-    <span class="image object"></span>
+
+    {{with .PrevInSection}}Previous: <a href="{{.Permalink}}">{{.Title}}</a>{{end}}
+    {{with .NextInSection}}Next: <a href="{{.Permalink}}">{{.Title}}</a>{{end}}
+
 </section>
 
 {{ end }}

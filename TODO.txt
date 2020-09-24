@@ -59,6 +59,10 @@ __________________
 
 --- news items
    _____________________
+
+
+   _ detail paginator styles
+   _ list grid for non-featured
    _ add featured and order
    _ queryset order by featured
    _ detail page teaser below headline
